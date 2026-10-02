@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ink: #070707;
+    --color-panel: #111111;
+    --color-raised: #181818;
+    --color-line: #262626;
+    --color-paper: #F6F3EC;
+    --color-mute: #8E8E8E;
+    --color-signal: #FF2A00;
+    --color-blaze: #FF5A00;
+    --color-volt: #E8FF00;
+    --color-ice: #00E8FF;
+    --color-moss: #22C55E;
+  }
+
+  html, body {
+    background-color: #070707;
+    color: #F6F3EC;
+    font-family: 'DM Sans', 'Mukta', system-ui, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Bebas Neue', Impact, 'Mukta', sans-serif;
+}
+
+.font-nepali {
+  font-family: 'Mukta', 'DM Sans', sans-serif;
+}
+
+/* Subtle architectural emergency grid pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Strobe flashing animation for rescue beacon */
+@keyframes strobe-flash {
+  0%, 49% { background-color: #ffffff; color: #000000; }
+  50%, 100% { background-color: #ff0000; color: #ffffff; }
+}
+
+.animate-strobe {
+  animation: strobe-flash 0.18s infinite;
+}
+
+@keyframes pulse-beacon {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 42, 0, 0.6); }
+  50% { box-shadow: 0 0 0 16px rgba(255, 42, 0, 0); }
+}
+
+.sos-beacon {
+  animation: pulse-beacon 1.5s ease-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}

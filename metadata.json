@@ -1,0 +1,6 @@
+{
+  "name": "SafePath Nepal — Emergency OS & Directory",
+  "description": "Comprehensive disaster preparedness, authentic Nepal emergency hotlines, Nepali Devanagari number tools, safe evacuation zones, offline first aid, and SOS toolkit.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
